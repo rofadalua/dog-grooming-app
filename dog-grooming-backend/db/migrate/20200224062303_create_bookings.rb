@@ -1,7 +1,7 @@
 class CreateBookings < ActiveRecord::Migration[6.0]
   def change
     create_table :bookings do |t|
-      t.integer :groomer_id
+      t.integer :user_id
       t.string :first_name
       t.string :last_name
       t.string :pet_name

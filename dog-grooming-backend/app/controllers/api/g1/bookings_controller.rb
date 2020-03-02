@@ -2,13 +2,13 @@ class Api::G1::BookingsController < ApplicationController
      
     def index
         @bookings = Booking.all 
-        render @json: @bookings
+        render json: @bookings
     end
 
     def create
         @booking = Booking.new(booking_params)
         if @booking.save 
-            render @json: @account
+            render json: @account
         else 
             render json: {error: "Please fill all the line"}
         end
@@ -16,7 +16,7 @@ class Api::G1::BookingsController < ApplicationController
 
     def show 
         @booking = Booking.find(params[:id])
-        renser @json: @booking
+        render json: @booking
     end
 
     def destroy

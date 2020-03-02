@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_02_24_062303) do
 
   create_table "bookings", force: :cascade do |t|
-    t.integer "groomer_id"
+    t.integer "user_id"
     t.string "first_name"
     t.string "last_name"
     t.string "pet_name"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_02_24_062303) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "groomers", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.datetime "created_at", precision: 6, null: false

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
   
+
   namespace :api do
   namespace :g1 do
+  resources :users
   resources :bookings
-  resources :groomers
+ 
     end
   end
   
