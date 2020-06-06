@@ -102,9 +102,9 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.8-x86-mingw32)
       mini_portile2 (~> 2.4.0)
-    puma (4.3.2)
+    puma (4.3.5)
       nio4r (~> 2.0)
-    puma (4.3.2-java)
+    puma (4.3.5-java)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-cors (1.1.1)
@@ -165,7 +165,7 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-driver (0.7.1-java)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     zeitwerk (2.2.2)
 
 PLATFORMS
